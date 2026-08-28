@@ -1,0 +1,104 @@
+{
+  "no_compile": {
+    "mean_recall": 0.5139,
+    "mean_precision": 0.627,
+    "mean_jaccard": 0.418,
+    "mean_n_comments": 8.0,
+    "mean_stability": 1.0,
+    "mean_strict_stability": 1.0,
+    "per_seed": [
+      {
+        "recall": 0.5395428571428571,
+        "precision": 0.642857142857143,
+        "jaccard": 0.434807142857143,
+        "n_comments": 8.0,
+        "stability": 1.0,
+        "strict_stability": 1.0
+      },
+      {
+        "recall": 0.4752571428571429,
+        "precision": 0.607142857142857,
+        "jaccard": 0.37972857142857147,
+        "n_comments": 8.0,
+        "stability": 1.0,
+        "strict_stability": 1.0
+      },
+      {
+        "recall": 0.5267857142857143,
+        "precision": 0.6309428571428572,
+        "jaccard": 0.4395214285714285,
+        "n_comments": 8.0,
+        "stability": 1.0,
+        "strict_stability": 1.0
+      }
+    ]
+  },
+  "bootstrap_fewshot": {
+    "mean_recall": 0.4724,
+    "mean_precision": 0.5992,
+    "mean_jaccard": 0.3961,
+    "mean_n_comments": 8.0,
+    "mean_stability": 1.0,
+    "mean_strict_stability": 1.0,
+    "per_seed": [
+      {
+        "recall": 0.45918571428571425,
+        "precision": 0.5833285714285713,
+        "jaccard": 0.3758,
+        "n_comments": 8.0,
+        "stability": 1.0,
+        "strict_stability": 1.0
+      },
+      {
+        "recall": 0.47602142857142854,
+        "precision": 0.6309571428571429,
+        "jaccard": 0.39920000000000005,
+        "n_comments": 8.0,
+        "stability": 1.0,
+        "strict_stability": 1.0
+      },
+      {
+        "recall": 0.48214285714285715,
+        "precision": 0.5833357142857143,
+        "jaccard": 0.4132714285714286,
+        "n_comments": 8.0,
+        "stability": 1.0,
+        "strict_stability": 1.0
+      }
+    ]
+  },
+  "miprov2": {
+    "mean_recall": 0.4978,
+    "mean_precision": 0.6706,
+    "mean_jaccard": 0.435,
+    "mean_n_comments": 8.0,
+    "mean_stability": 1.0,
+    "mean_strict_stability": 1.0,
+    "per_seed": [
+      {
+        "recall": 0.5437928571428572,
+        "precision": 0.6785642857142857,
+        "jaccard": 0.46568571428571437,
+        "n_comments": 8.0,
+        "stability": 1.0,
+        "strict_stability": 1.0
+      },
+      {
+        "recall": 0.4408142857142857,
+        "precision": 0.6428571428571427,
+        "jaccard": 0.38365,
+        "n_comments": 8.0,
+        "stability": 1.0,
+        "strict_stability": 1.0
+      },
+      {
+        "recall": 0.5089285714285714,
+        "precision": 0.6904714285714286,
+        "jaccard": 0.45556428571428575,
+        "n_comments": 8.0,
+        "stability": 1.0,
+        "strict_stability": 1.0
+      }
+    ]
+  }
+}

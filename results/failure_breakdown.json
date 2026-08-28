@@ -1,0 +1,294 @@
+{
+  "synthetic": {
+    "fixed": {
+      "n_runs": 12,
+      "n_iters": 1,
+      "final_stability_mean": 1.0,
+      "final_stability_std": 0.0,
+      "iter_mean": [
+        1.0
+      ],
+      "iter_std": [
+        0.0
+      ]
+    },
+    "naive": {
+      "n_runs": 12,
+      "n_iters": 8,
+      "final_stability_mean": 1.0,
+      "final_stability_std": 0.0,
+      "iter_mean": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "iter_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ours": {
+      "n_runs": 12,
+      "n_iters": 8,
+      "final_stability_mean": 1.0,
+      "final_stability_std": 0.0,
+      "iter_mean": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "iter_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "bbh": {
+    "fixed": {
+      "n_runs": 12,
+      "n_iters": 1,
+      "final_stability_mean": 1.0,
+      "final_stability_std": 0.0,
+      "iter_mean": [
+        1.0
+      ],
+      "iter_std": [
+        0.0
+      ]
+    },
+    "naive": {
+      "n_runs": 12,
+      "n_iters": 6,
+      "final_stability_mean": 0.9167,
+      "final_stability_std": 0.2764,
+      "iter_mean": [
+        1.0,
+        1.0,
+        0.9167,
+        0.9167,
+        0.9167,
+        0.9167
+      ],
+      "iter_std": [
+        0.0,
+        0.0,
+        0.2764,
+        0.2764,
+        0.2764,
+        0.2764
+      ]
+    },
+    "ours": {
+      "n_runs": 12,
+      "n_iters": 6,
+      "final_stability_mean": 1.0,
+      "final_stability_std": 0.0,
+      "iter_mean": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "iter_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "insurance": {
+    "editable_control": {
+      "n_runs": 3,
+      "n_iters": 8,
+      "final_stability_mean": 1.0,
+      "final_stability_std": 0.0,
+      "iter_mean": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "iter_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "fixed": {
+      "n_runs": 3,
+      "n_iters": 1,
+      "final_stability_mean": 1.0,
+      "final_stability_std": 0.0,
+      "iter_mean": [
+        1.0
+      ],
+      "iter_std": [
+        0.0
+      ]
+    },
+    "naive": {
+      "n_runs": 3,
+      "n_iters": 8,
+      "final_stability_mean": 1.0,
+      "final_stability_std": 0.0,
+      "iter_mean": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "iter_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "no_validation": {
+      "n_runs": 3,
+      "n_iters": 8,
+      "final_stability_mean": 1.0,
+      "final_stability_std": 0.0,
+      "iter_mean": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "iter_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ours": {
+      "n_runs": 3,
+      "n_iters": 8,
+      "final_stability_mean": 1.0,
+      "final_stability_std": 0.0,
+      "iter_mean": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "iter_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "review": {
+    "fixed": {
+      "n_runs": 3,
+      "n_iters": 1,
+      "final_stability_mean": 1.0,
+      "final_stability_std": 0.0,
+      "iter_mean": [
+        1.0
+      ],
+      "iter_std": [
+        0.0
+      ]
+    },
+    "naive": {
+      "n_runs": 3,
+      "n_iters": 4,
+      "final_stability_mean": 0.0,
+      "final_stability_std": 0.0,
+      "iter_mean": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "iter_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ours": {
+      "n_runs": 3,
+      "n_iters": 4,
+      "final_stability_mean": 1.0,
+      "final_stability_std": 0.0,
+      "iter_mean": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "iter_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

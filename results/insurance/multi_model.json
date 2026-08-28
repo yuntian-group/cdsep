@@ -1,0 +1,210 @@
+{
+  "openai": {
+    "fixed": {
+      "mean_accuracy": 0.5448,
+      "mean_mae": 0.4552,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.5671641791044776,
+          "mae": 0.43283582089552236,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.5671641791044776,
+              "mae": 0.43283582089552236,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.5223880597014925,
+          "mae": 0.47761194029850745,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.5223880597014925,
+              "mae": 0.47761194029850745,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "naive": {
+      "mean_accuracy": 0.6194,
+      "mean_mae": 0.3955,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.6268656716417911,
+          "mae": 0.373134328358209,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.6268656716417911,
+              "mae": 0.373134328358209,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.5970149253731343,
+              "mae": 0.40298507462686567,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.6268656716417911,
+              "mae": 0.373134328358209,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.6119402985074627,
+          "mae": 0.417910447761194,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.5671641791044776,
+              "mae": 0.43283582089552236,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.5970149253731343,
+              "mae": 0.40298507462686567,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.6119402985074627,
+              "mae": 0.417910447761194,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "ours": {
+      "mean_accuracy": 0.6119,
+      "mean_mae": 0.403,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.582089552238806,
+          "mae": 0.417910447761194,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.6268656716417911,
+              "mae": 0.373134328358209,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.5671641791044776,
+              "mae": 0.43283582089552236,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.582089552238806,
+              "mae": 0.417910447761194,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.6417910447761194,
+          "mae": 0.3880597014925373,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.5373134328358209,
+              "mae": 0.4925373134328358,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.6268656716417911,
+              "mae": 0.3880597014925373,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.6417910447761194,
+              "mae": 0.3880597014925373,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "anthropic": {
+    "fixed": {
+      "mean_accuracy": 0.0,
+      "mean_mae": 1.0,
+      "mean_stability": 0.0,
+      "per_seed": [
+        {
+          "accuracy": 0,
+          "mae": 1.0,
+          "stability": 0,
+          "iterations": []
+        },
+        {
+          "accuracy": 0,
+          "mae": 1.0,
+          "stability": 0,
+          "iterations": []
+        }
+      ]
+    },
+    "naive": {
+      "mean_accuracy": 0.0,
+      "mean_mae": 1.0,
+      "mean_stability": 0.0,
+      "per_seed": [
+        {
+          "accuracy": 0,
+          "mae": 1.0,
+          "stability": 0,
+          "iterations": []
+        },
+        {
+          "accuracy": 0,
+          "mae": 1.0,
+          "stability": 0,
+          "iterations": []
+        }
+      ]
+    },
+    "ours": {
+      "mean_accuracy": 0.0,
+      "mean_mae": 1.0,
+      "mean_stability": 0.0,
+      "per_seed": [
+        {
+          "accuracy": 0,
+          "mae": 1.0,
+          "stability": 0,
+          "iterations": []
+        },
+        {
+          "accuracy": 0,
+          "mae": 1.0,
+          "stability": 0,
+          "iterations": []
+        }
+      ]
+    }
+  }
+}

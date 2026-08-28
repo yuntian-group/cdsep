@@ -1,0 +1,596 @@
+% ------------------------------------------------------------------------
+% Bibliography for "End-to-End Prompt Optimization in Multi-Agent LLMs
+% through Control-Data Flow Separation".
+%
+% Organized as:
+%   1. Prompt optimization for LLMs
+%   2. Multi-agent LLM systems and agent frameworks
+%   3. Constrained generation and typed/structured LLM outputs
+%   4. LLM-as-judge evaluation
+%   5. AI peer review
+%   6. Benchmarks and other primary references used in the paper
+% ------------------------------------------------------------------------
+
+% ============================================================
+% 1. Prompt optimization for LLMs
+% ============================================================
+
+@article{yuksekgonul2025optimizing,
+  title   = {Optimizing generative {AI} by backpropagating language model feedback},
+  author  = {Yuksekgonul, Mert and Bianchi, Federico and Boen, Joseph and Liu, Sheng and Lu, Pan and Huang, Zhi and Guestrin, Carlos and Zou, James},
+  journal = {Nature},
+  volume  = {639},
+  number  = {8055},
+  pages   = {609--616},
+  year    = {2025},
+  doi     = {10.1038/s41586-025-08661-4},
+  url     = {https://doi.org/10.1038/s41586-025-08661-4}
+}
+
+@inproceedings{khattab2024dspy,
+  title     = {{DSP}y: Compiling Declarative Language Model Calls into State-of-the-Art Pipelines},
+  author    = {Khattab, Omar and Singhvi, Arnav and Maheshwari, Paridhi and Zhang, Zhiyuan and Santhanam, Keshav and Vardhamanan A, Sri and Haq, Saiful and Sharma, Ashutosh and Joshi, Thomas T. and Moazam, Hanna and Miller, Heather and Zaharia, Matei and Potts, Christopher},
+  booktitle = {The Twelfth International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  url       = {https://openreview.net/forum?id=sY5N0zY5Od}
+}
+
+@inproceedings{opsahlong2024mipro,
+  title     = {Optimizing Instructions and Demonstrations for Multi-Stage Language Model Programs},
+  author    = {Opsahl-Ong, Krista and Ryan, Michael J. and Purtell, Josh and Broman, David and Potts, Christopher and Zaharia, Matei and Khattab, Omar},
+  booktitle = {Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year      = {2024},
+  pages     = {9340--9366},
+  publisher = {Association for Computational Linguistics},
+  address   = {Miami, Florida, USA},
+  url       = {https://aclanthology.org/2024.emnlp-main.525/},
+  doi       = {10.18653/v1/2024.emnlp-main.525}
+}
+
+@inproceedings{agrawal2026gepa,
+  title     = {{GEPA}: Reflective Prompt Evolution Can Outperform Reinforcement Learning},
+  author    = {Agrawal, Lakshya A and Tan, Shangyin and Soylu, Dilara and Ziems, Noah and Khare, Rishi and Opsahl-Ong, Krista and Singhvi, Arnav and Shandilya, Herumb and Ryan, Michael J. and Jiang, Meng and Potts, Christopher and Sen, Koushik and Dimakis, Alexandros G. and Stoica, Ion and Klein, Dan and Zaharia, Matei and Khattab, Omar},
+  booktitle = {The Fourteenth International Conference on Learning Representations (ICLR)},
+  year      = {2026},
+  note      = {Oral presentation},
+  url       = {https://openreview.net/forum?id=RQm2KQTM5r},
+  eprint    = {2507.19457},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{yang2024opro,
+  title     = {Large Language Models as Optimizers},
+  author    = {Yang, Chengrun and Wang, Xuezhi and Lu, Yifeng and Liu, Hanxiao and Le, Quoc V. and Zhou, Denny and Chen, Xinyun},
+  booktitle = {The Twelfth International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  url       = {https://openreview.net/forum?id=Bb4VGOWELI},
+  eprint    = {2309.03409},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{zhou2023ape,
+  title     = {Large Language Models Are Human-Level Prompt Engineers},
+  author    = {Zhou, Yongchao and Muresanu, Andrei Ioan and Han, Ziwen and Paster, Keiran and Pitis, Silviu and Chan, Harris and Ba, Jimmy},
+  booktitle = {The Eleventh International Conference on Learning Representations (ICLR)},
+  year      = {2023},
+  url       = {https://openreview.net/forum?id=92gvk82DE-},
+  eprint    = {2211.01910},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{pryzant2023automatic,
+  title     = {Automatic Prompt Optimization with ``Gradient Descent'' and Beam Search},
+  author    = {Pryzant, Reid and Iter, Dan and Li, Jerry and Lee, Yin and Zhu, Chenguang and Zeng, Michael},
+  booktitle = {Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year      = {2023},
+  pages     = {7957--7968},
+  publisher = {Association for Computational Linguistics},
+  address   = {Singapore},
+  url       = {https://aclanthology.org/2023.emnlp-main.494/},
+  doi       = {10.18653/v1/2023.emnlp-main.494}
+}
+
+@inproceedings{guo2024evoprompt,
+  title     = {Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers},
+  author    = {Guo, Qingyan and Wang, Rui and Guo, Junliang and Li, Bei and Song, Kaitao and Tan, Xu and Liu, Guoqing and Bian, Jiang and Yang, Yujiu},
+  booktitle = {The Twelfth International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  url       = {https://openreview.net/forum?id=ZG3RaNIsO8},
+  eprint    = {2309.08532},
+  archivePrefix = {arXiv}
+}
+
+@misc{fernando2023promptbreeder,
+  title         = {Promptbreeder: Self-Referential Self-Improvement Via Prompt Evolution},
+  author        = {Fernando, Chrisantha and Banarse, Dylan and Michalewski, Henryk and Osindero, Simon and Rockt{\"a}schel, Tim},
+  year          = {2023},
+  eprint        = {2309.16797},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2309.16797}
+}
+
+@inproceedings{ye2024pe2,
+  title     = {Prompt Engineering a Prompt Engineer},
+  author    = {Ye, Qinyuan and Ahmed, Mohamed and Pryzant, Reid and Khani, Fereshte},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2024},
+  year      = {2024},
+  pages     = {355--385},
+  publisher = {Association for Computational Linguistics},
+  address   = {Bangkok, Thailand},
+  url       = {https://aclanthology.org/2024.findings-acl.21/},
+  doi       = {10.18653/v1/2024.findings-acl.21},
+  eprint    = {2311.05661},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{schnabel2024sammo,
+  title     = {Symbolic Prompt Program Search: A Structure-Aware Approach to Efficient Compile-Time Prompt Optimization},
+  author    = {Schnabel, Tobias and Neville, Jennifer},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2024},
+  year      = {2024},
+  pages     = {670--686},
+  publisher = {Association for Computational Linguistics},
+  address   = {Miami, Florida, USA},
+  url       = {https://aclanthology.org/2024.findings-emnlp.37/},
+  doi       = {10.18653/v1/2024.findings-emnlp.37}
+}
+
+@inproceedings{wang2024promptagent,
+  title     = {{PromptAgent}: Strategic Planning with Language Models Enables Expert-level Prompt Optimization},
+  author    = {Wang, Xinyuan and Li, Chenxi and Wang, Zhen and Bai, Fan and Luo, Haotian and Zhang, Jiayou and Jojic, Nebojsa and Xing, Eric P. and Hu, Zhiting},
+  booktitle = {The Twelfth International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  url       = {https://openreview.net/forum?id=22pyNMuIoa},
+  eprint    = {2310.16427},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{madaan2023selfrefine,
+  title     = {Self-Refine: Iterative Refinement with Self-Feedback},
+  author    = {Madaan, Aman and Tandon, Niket and Gupta, Prakhar and Hallinan, Skyler and Gao, Luyu and Wiegreffe, Sarah and Alon, Uri and Dziri, Nouha and Prabhumoye, Shrimai and Yang, Yiming and Gupta, Shashank and Majumder, Bodhisattwa Prasad and Hermann, Katherine and Welleck, Sean and Yazdanbakhsh, Amir and Clark, Peter},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  year      = {2023},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/91edff07232fb1b55a505a9e9f6c0ff3-Abstract-Conference.html},
+  eprint    = {2303.17651},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{shinn2023reflexion,
+  title     = {Reflexion: Language Agents with Verbal Reinforcement Learning},
+  author    = {Shinn, Noah and Cassano, Federico and Berman, Edward and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  year      = {2023},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html},
+  eprint    = {2303.11366},
+  archivePrefix = {arXiv}
+}
+
+% ============================================================
+% 2. Multi-agent LLM systems and agent frameworks
+% ============================================================
+
+@misc{wu2023autogen,
+  title         = {{AutoGen}: Enabling Next-Gen {LLM} Applications via Multi-Agent Conversation},
+  author        = {Wu, Qingyun and Bansal, Gagan and Zhang, Jieyu and Wu, Yiran and Li, Beibin and Zhu, Erkang and Jiang, Li and Zhang, Xiaoyun and Zhang, Shaokun and Liu, Jiale and Awadallah, Ahmed Hassan and White, Ryen W. and Burger, Doug and Wang, Chi},
+  year          = {2023},
+  eprint        = {2308.08155},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2308.08155}
+}
+
+@inproceedings{hong2024metagpt,
+  title     = {{MetaGPT}: Meta Programming for A Multi-Agent Collaborative Framework},
+  author    = {Hong, Sirui and Zhuge, Mingchen and Chen, Jonathan and Zheng, Xiawu and Cheng, Yuheng and Wang, Jinlin and Zhang, Ceyao and Wang, Zili and Yau, Steven Ka Shing and Lin, Zijuan and Zhou, Liyang and Ran, Chenyu and Xiao, Lingfeng and Wu, Chenglin and Schmidhuber, J{\"u}rgen},
+  booktitle = {The Twelfth International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  url       = {https://openreview.net/forum?id=VtmBAGCN7o}
+}
+
+@inproceedings{qian2024chatdev,
+  title     = {{ChatDev}: Communicative Agents for Software Development},
+  author    = {Qian, Chen and Liu, Wei and Liu, Hongzhang and Chen, Nuo and Dang, Yufan and Li, Jiahao and Yang, Cheng and Chen, Weize and Su, Yusheng and Cong, Xin and Xu, Juyuan and Li, Dahai and Liu, Zhiyuan and Sun, Maosong},
+  booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  year      = {2024},
+  pages     = {15174--15186},
+  publisher = {Association for Computational Linguistics},
+  address   = {Bangkok, Thailand},
+  url       = {https://aclanthology.org/2024.acl-long.810/},
+  doi       = {10.18653/v1/2024.acl-long.810}
+}
+
+@inproceedings{li2023camel,
+  title     = {{CAMEL}: Communicative Agents for ``Mind'' Exploration of Large Language Model Society},
+  author    = {Li, Guohao and Hammoud, Hasan Abed Al Kader and Itani, Hani and Khizbullin, Dmitrii and Ghanem, Bernard},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  year      = {2023},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/a3621ee907def47c1b952ade25c67698-Abstract-Conference.html},
+  eprint    = {2303.17760},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{chen2024agentverse,
+  title     = {{AgentVerse}: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors},
+  author    = {Chen, Weize and Su, Yusheng and Zuo, Jingwei and Yang, Cheng and Yuan, Chenfei and Chan, Chi-Min and Yu, Heyang and Lu, Yaxi and Hung, Yi-Hsin and Qian, Chen and Qin, Yujia and Cong, Xin and Xie, Ruobing and Liu, Zhiyuan and Sun, Maosong and Zhou, Jie},
+  booktitle = {The Twelfth International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  url       = {https://openreview.net/forum?id=EHg5GDnyq1},
+  eprint    = {2308.10848},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{du2024debate,
+  title     = {Improving Factuality and Reasoning in Language Models through Multiagent Debate},
+  author    = {Du, Yilun and Li, Shuang and Torralba, Antonio and Tenenbaum, Joshua B. and Mordatch, Igor},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  year      = {2024},
+  pages     = {11733--11763},
+  url       = {https://proceedings.mlr.press/v235/du24e.html},
+  eprint    = {2305.14325},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{wang2024spp,
+  title     = {Unleashing the Emergent Cognitive Synergy in Large Language Models: A Task-Solving Agent through Multi-Persona Self-Collaboration},
+  author    = {Wang, Zhenhailong and Mao, Shaoguang and Wu, Wenshan and Ge, Tao and Wei, Furu and Ji, Heng},
+  booktitle = {Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
+  year      = {2024},
+  pages     = {257--279},
+  publisher = {Association for Computational Linguistics},
+  address   = {Mexico City, Mexico},
+  url       = {https://aclanthology.org/2024.naacl-long.15/},
+  doi       = {10.18653/v1/2024.naacl-long.15}
+}
+
+@inproceedings{yang2024sweagent,
+  title     = {{SWE}-agent: Agent-Computer Interfaces Enable Automated Software Engineering},
+  author    = {Yang, John and Jimenez, Carlos E. and Wettig, Alexander and Lieret, Kilian and Yao, Shunyu and Narasimhan, Karthik and Press, Ofir},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {37},
+  year      = {2024},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html},
+  eprint    = {2405.15793},
+  archivePrefix = {arXiv}
+}
+
+@misc{xia2024agentless,
+  title         = {Agentless: Demystifying {LLM}-based Software Engineering Agents},
+  author        = {Xia, Chunqiu Steven and Deng, Yinlin and Dunn, Soren and Zhang, Lingming},
+  year          = {2024},
+  eprint        = {2407.01489},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SE},
+  url           = {https://arxiv.org/abs/2407.01489}
+}
+
+@inproceedings{wang2025openhands,
+  title     = {{OpenHands}: An Open Platform for {AI} Software Developers as Generalist Agents},
+  author    = {Wang, Xingyao and Li, Boxuan and Song, Yufan and Xu, Frank F. and Tang, Xiangru and Zhuge, Mingchen and Pan, Jiayi and Song, Yueqi and Li, Bowen and Singh, Jaskirat and Tran, Hoang H. and Li, Fuqiang and Ma, Ren and Zheng, Mingzhang and Qian, Bill and Shao, Yanjun and Muennighoff, Niklas and Zhang, Yizhe and Hui, Binyuan and Lin, Junyang and Brennan, Robert and Peng, Hao and Ji, Heng and Neubig, Graham},
+  booktitle = {The Thirteenth International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=OJd3ayDDoF},
+  eprint    = {2407.16741},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{liu2024agentbench,
+  title     = {{AgentBench}: Evaluating {LLM}s as Agents},
+  author    = {Liu, Xiao and Yu, Hao and Zhang, Hanchen and Xu, Yifan and Lei, Xuanyu and Lai, Hanyu and Gu, Yu and Ding, Hangliang and Men, Kaiwen and Yang, Kejuan and Zhang, Shudan and Deng, Xiang and Zeng, Aohan and Du, Zhengxiao and Zhang, Chenhui and Shen, Sheng and Zhang, Tianjun and Su, Yu and Sun, Huan and Huang, Minlie and Dong, Yuxiao and Tang, Jie},
+  booktitle = {The Twelfth International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  url       = {https://openreview.net/forum?id=zAdUB0aCTQ},
+  eprint    = {2308.03688},
+  archivePrefix = {arXiv}
+}
+
+@article{wang2024voyager,
+  title   = {Voyager: An Open-Ended Embodied Agent with Large Language Models},
+  author  = {Wang, Guanzhi and Xie, Yuqi and Jiang, Yunfan and Mandlekar, Ajay and Xiao, Chaowei and Zhu, Yuke and Fan, Linxi and Anandkumar, Anima},
+  journal = {Transactions on Machine Learning Research},
+  year    = {2024},
+  url     = {https://openreview.net/forum?id=ehfRiF0R3a},
+  eprint  = {2305.16291},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{hua2024trustagent,
+  title     = {{TrustAgent}: Towards Safe and Trustworthy {LLM}-based Agents},
+  author    = {Hua, Wenyue and Yang, Xianjun and Jin, Mingyu and Li, Zelong and Cheng, Wei and Tang, Ruixiang and Zhang, Yongfeng},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2024},
+  year      = {2024},
+  pages     = {10000--10016},
+  publisher = {Association for Computational Linguistics},
+  address   = {Miami, Florida, USA},
+  url       = {https://aclanthology.org/2024.findings-emnlp.585/},
+  doi       = {10.18653/v1/2024.findings-emnlp.585},
+  eprint    = {2402.01586},
+  archivePrefix = {arXiv}
+}
+
+@misc{xi2023rise,
+  title         = {The Rise and Potential of Large Language Model Based Agents: A Survey},
+  author        = {Xi, Zhiheng and Chen, Wenxiang and Guo, Xin and He, Wei and Ding, Yiwen and Hong, Boyang and Zhang, Ming and Wang, Junzhe and Jin, Senjie and Zhou, Enyu and Zheng, Rui and Fan, Xiaoran and Wang, Xiao and Xiong, Limao and Zhou, Yuhao and Wang, Weiran and Jiang, Changhao and Zou, Yicheng and Liu, Xiangyang and Yin, Zhangyue and Dou, Shihan and Weng, Rongxiang and Cheng, Wensen and Zhang, Qi and Qin, Wenjuan and Zheng, Yongyan and Qiu, Xipeng and Huang, Xuanjing and Gui, Tao},
+  year          = {2023},
+  eprint        = {2309.07864},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2309.07864}
+}
+
+@inproceedings{guo2024llmmasurvey,
+  title     = {Large Language Model Based Multi-agents: A Survey of Progress and Challenges},
+  author    = {Guo, Taicheng and Chen, Xiuying and Wang, Yaqi and Chang, Ruidi and Pei, Shichao and Chawla, Nitesh V. and Wiest, Olaf and Zhang, Xiangliang},
+  booktitle = {Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence (IJCAI)},
+  year      = {2024},
+  pages     = {8048--8057},
+  doi       = {10.24963/ijcai.2024/890},
+  url       = {https://www.ijcai.org/proceedings/2024/890},
+  eprint    = {2402.01680},
+  archivePrefix = {arXiv}
+}
+
+@misc{chen2024coderissueresolvingmultiagent,
+  title         = {{CodeR}: Issue Resolving with Multi-Agent and Task Graphs},
+  author        = {Chen, Dong and Lin, Shaoxin and Zeng, Muhan and Zan, Daoguang and Wang, Jian-Gang and Cheshkov, Anton and Sun, Jun and Yu, Hao and Dong, Guoliang and Aliev, Artem and Wang, Jie and Cheng, Xiao and Liang, Guangtai and Ma, Yuchi and Bian, Pan and Xie, Tao and Wang, Qianxiang},
+  year          = {2024},
+  eprint        = {2406.01304},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2406.01304}
+}
+
+@inproceedings{antoniades2025swesearch,
+  title     = {{SWE}-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement},
+  author    = {Antoniades, Antonis and {\"O}rwall, Albert and Zhang, Kexun and Xie, Yuxi and Goyal, Anirudh and Wang, William Yang},
+  booktitle = {The Thirteenth International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=G7sIFXugTX}
+}
+
+@inproceedings{gan-etal-2025-master,
+  title     = {{MASTER}: A Multi-Agent System with {LLM} Specialized {MCTS}},
+  author    = {Gan, Bingzheng and Zhao, Yufan and Zhang, Tianyi and Huang, Jing and Yusu, Li and Teo, Shu Xian and Zhang, Changwang and Shi, Wei},
+  booktitle = {Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
+  year      = {2025},
+  pages     = {9409--9426},
+  publisher = {Association for Computational Linguistics},
+  address   = {Albuquerque, New Mexico},
+  url       = {https://aclanthology.org/2025.naacl-long.476/},
+  doi       = {10.18653/v1/2025.naacl-long.476}
+}
+
+@misc{zheng2025thoughtcommunicationmultiagentcollaboration,
+  title         = {Thought Communication in Multiagent Collaboration},
+  author        = {Zheng, Yujia and Zhao, Zhuokai and Li, Zijian and Xie, Yaqi and Gao, Mingze and Zhang, Lizhu and Zhang, Kun},
+  year          = {2025},
+  eprint        = {2510.20733},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2510.20733}
+}
+
+@article{sumers2024cognitive,
+  title   = {Cognitive Architectures for Language Agents},
+  author  = {Sumers, Theodore R. and Yao, Shunyu and Narasimhan, Karthik and Griffiths, Thomas L.},
+  journal = {Transactions on Machine Learning Research},
+  issn    = {2835-8856},
+  year    = {2024},
+  url     = {https://openreview.net/forum?id=1i6ZCvflQJ},
+  note    = {Survey Certification}
+}
+
+% ============================================================
+% 3. Constrained generation and typed / structured LLM outputs
+% ============================================================
+
+@inproceedings{beurer2023lmql,
+  title     = {Prompting Is Programming: A Query Language for Large Language Models},
+  author    = {Beurer-Kellner, Luca and Fischer, Marc and Vechev, Martin},
+  booktitle = {Proceedings of the 44th ACM SIGPLAN International Conference on Programming Language Design and Implementation (PLDI)},
+  year      = {2023},
+  pages     = {1946--1969},
+  doi       = {10.1145/3591300},
+  url       = {https://doi.org/10.1145/3591300},
+  eprint    = {2212.06094},
+  archivePrefix = {arXiv}
+}
+
+@misc{willard2023outlines,
+  title         = {Efficient Guided Generation for Large Language Models},
+  author        = {Willard, Brandon T. and Louf, R{\'e}mi},
+  year          = {2023},
+  eprint        = {2307.09702},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2307.09702}
+}
+
+@misc{ugare2024syncode,
+  title         = {{SynCode}: {LLM} Generation with Grammar Augmentation},
+  author        = {Ugare, Shubham and Suresh, Tarun and Kang, Hangoo and Misailovic, Sasa and Singh, Gagandeep},
+  year          = {2024},
+  eprint        = {2403.01632},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2403.01632}
+}
+
+@inproceedings{scholak2021picard,
+  title     = {{PICARD}: Parsing Incrementally for Constrained Auto-Regressive Decoding from Language Models},
+  author    = {Scholak, Torsten and Schucher, Nathan and Bahdanau, Dzmitry},
+  booktitle = {Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year      = {2021},
+  pages     = {9895--9901},
+  publisher = {Association for Computational Linguistics},
+  address   = {Online and Punta Cana, Dominican Republic},
+  url       = {https://aclanthology.org/2021.emnlp-main.779/},
+  doi       = {10.18653/v1/2021.emnlp-main.779}
+}
+
+@inproceedings{geng2023gcd,
+  title     = {Grammar-Constrained Decoding for Structured {NLP} Tasks without Finetuning},
+  author    = {Geng, Saibo and Josifoski, Martin and Peyrard, Maxime and West, Robert},
+  booktitle = {Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year      = {2023},
+  pages     = {10932--10952},
+  publisher = {Association for Computational Linguistics},
+  address   = {Singapore},
+  url       = {https://aclanthology.org/2023.emnlp-main.674/},
+  doi       = {10.18653/v1/2023.emnlp-main.674}
+}
+
+@misc{dong2024xgrammar,
+  title         = {{XGrammar}: Flexible and Efficient Structured Generation Engine for Large Language Models},
+  author        = {Dong, Yixin and Ruan, Charlie F. and Cai, Yaxing and Lai, Ruihang and Xu, Ziyi and Zhao, Yilong and Chen, Tianqi},
+  year          = {2024},
+  eprint        = {2411.15100},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2411.15100}
+}
+
+% ============================================================
+% 4. LLM-as-judge evaluation
+% ============================================================
+
+@inproceedings{zheng2023judging,
+  title     = {Judging {LLM}-as-a-Judge with {MT}-Bench and Chatbot Arena},
+  author    = {Zheng, Lianmin and Chiang, Wei-Lin and Sheng, Ying and Zhuang, Siyuan and Wu, Zhanghao and Zhuang, Yonghao and Lin, Zi and Li, Zhuohan and Li, Dacheng and Xing, Eric P. and Zhang, Hao and Gonzalez, Joseph E. and Stoica, Ion},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  year      = {2023},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html},
+  eprint    = {2306.05685},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{liu2023geval,
+  title     = {{G}-Eval: {NLG} Evaluation using {GPT}-4 with Better Human Alignment},
+  author    = {Liu, Yang and Iter, Dan and Xu, Yichong and Wang, Shuohang and Xu, Ruochen and Zhu, Chenguang},
+  booktitle = {Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year      = {2023},
+  pages     = {2511--2522},
+  publisher = {Association for Computational Linguistics},
+  address   = {Singapore},
+  url       = {https://aclanthology.org/2023.emnlp-main.153/},
+  doi       = {10.18653/v1/2023.emnlp-main.153}
+}
+
+@inproceedings{chiang2024chatbotarena,
+  title     = {Chatbot Arena: An Open Platform for Evaluating {LLM}s by Human Preference},
+  author    = {Chiang, Wei-Lin and Zheng, Lianmin and Sheng, Ying and Angelopoulos, Anastasios Nikolas and Li, Tianle and Li, Dacheng and Zhu, Banghua and Zhang, Hao and Jordan, Michael and Gonzalez, Joseph E. and Stoica, Ion},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  year      = {2024},
+  pages     = {8359--8388},
+  url       = {https://proceedings.mlr.press/v235/chiang24b.html},
+  eprint    = {2403.04132},
+  archivePrefix = {arXiv}
+}
+
+@misc{gu2024surveyllmjudge,
+  title         = {A Survey on {LLM}-as-a-Judge},
+  author        = {Gu, Jiawei and Jiang, Xuhui and Shi, Zhichao and Tan, Hexiang and Zhai, Xuehao and Xu, Chengjin and Li, Wei and Shen, Yinghan and Ma, Shengjie and Liu, Honghao and Wang, Saizhuo and Zhang, Kun and Wang, Yuanzhuo and Gao, Wen and Ni, Lionel M. and Guo, Jian},
+  year          = {2024},
+  eprint        = {2411.15594},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2411.15594}
+}
+
+@misc{dubois2024alpacaeval,
+  title         = {Length-Controlled {AlpacaEval}: A Simple Way to Debias Automatic Evaluators},
+  author        = {Dubois, Yann and Galambosi, Bal{\'a}zs and Liang, Percy and Hashimoto, Tatsunori B.},
+  year          = {2024},
+  eprint        = {2404.04475},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2404.04475}
+}
+
+% ============================================================
+% 5. AI peer review
+% ============================================================
+
+@misc{darcy2024margmultiagentreviewgeneration,
+  title         = {{MARG}: Multi-Agent Review Generation for Scientific Papers},
+  author        = {D'Arcy, Mike and Hope, Tom and Birnbaum, Larry and Downey, Doug},
+  year          = {2024},
+  eprint        = {2401.04259},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2401.04259}
+}
+
+@inproceedings{darcy2024aries,
+  title     = {{ARIES}: A Corpus of Scientific Paper Edits Made in Response to Peer Reviews},
+  author    = {D'Arcy, Mike and Ross, Alexis and Bransom, Erin and Kuehl, Bailey and Bragg, Jonathan and Hope, Tom and Downey, Doug},
+  booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  year      = {2024},
+  pages     = {6985--7001},
+  publisher = {Association for Computational Linguistics},
+  address   = {Bangkok, Thailand},
+  url       = {https://aclanthology.org/2024.acl-long.377/},
+  doi       = {10.18653/v1/2024.acl-long.377},
+  eprint    = {2306.12587},
+  archivePrefix = {arXiv}
+}
+
+@article{liang2024canllms,
+  title   = {Can large language models provide useful feedback on research papers? A large-scale empirical analysis},
+  author  = {Liang, Weixin and Zhang, Yuhui and Cao, Hancheng and Wang, Binglu and Ding, Daisy Yi and Yang, Xinyu and Vodrahalli, Kailas and He, Siyu and Smith, Daniel Scott and Yin, Yian and McFarland, Daniel A. and Zou, James},
+  journal = {NEJM AI},
+  volume  = {1},
+  number  = {8},
+  year    = {2024},
+  doi     = {10.1056/AIoa2400196},
+  url     = {https://ai.nejm.org/doi/10.1056/AIoa2400196},
+  eprint  = {2310.01783},
+  archivePrefix = {arXiv}
+}
+
+@misc{lu2024aiscientist,
+  title         = {The {AI} Scientist: Towards Fully Automated Open-Ended Scientific Discovery},
+  author        = {Lu, Chris and Lu, Cong and Lange, Robert Tjarko and Foerster, Jakob and Clune, Jeff and Ha, David},
+  year          = {2024},
+  eprint        = {2408.06292},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2408.06292}
+}
+
+@misc{liu2023reviewergpt,
+  title         = {{ReviewerGPT}? An Exploratory Study on Using Large Language Models for Paper Reviewing},
+  author        = {Liu, Ryan and Shah, Nihar B.},
+  year          = {2023},
+  eprint        = {2306.00622},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2306.00622}
+}
+
+% ============================================================
+% 6. Benchmarks and other primary references
+% ============================================================
+
+@article{srivastava2023beyond,
+  title   = {Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models},
+  author  = {{BIG-bench authors}},
+  journal = {Transactions on Machine Learning Research},
+  issn    = {2835-8856},
+  year    = {2023},
+  url     = {https://openreview.net/forum?id=uyTL5Bvosj},
+  eprint  = {2206.04615},
+  archivePrefix = {arXiv}
+}
+@inproceedings{
+sainz2024gollie,
+title={Go{LLIE}: Annotation Guidelines improve Zero-Shot Information-Extraction},
+author={Oscar Sainz and Iker Garc{\'\i}a-Ferrero and Rodrigo Agerri and Oier Lopez de Lacalle and German Rigau and Eneko Agirre},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=Y3wpuxd7u9}
+}

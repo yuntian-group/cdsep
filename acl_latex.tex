@@ -1,0 +1,102 @@
+% This must be in the first 5 lines to tell arXiv to use pdfLaTeX, which is strongly recommended.
+\pdfoutput=1
+% In particular, the hyperref package requires pdfLaTeX in order to break URLs across lines.
+
+\documentclass[11pt]{article}
+
+% Change "review" to "final" to generate the final (sometimes called camera-ready) version.
+% Change to "preprint" to generate a non-anonymous version with page numbers.
+\usepackage[final]{acl}
+
+% Standard package includes
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{listings}
+\usepackage{comment}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{makecell}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{tcolorbox}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{xspace}
+\usepackage{stfloats}
+\usepackage{longtable}
+\usepackage[nameinlink]{cleveref}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+
+% Convenience macro for TODO placeholders
+\newcommand{\TODO}{\textcolor{red}{TODO}\xspace}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+
+\usepackage{amsthm}
+\newtheorem{lemma}{Lemma}
+
+\title{Control-Data Flow Separation:\\ Stable Prompt Optimization in Multi-Agent LLMs}
+
+\author{
+\textbf{Wentao Zhang\textsuperscript{1}},
+\textbf{Shariyar Murtaza\textsuperscript{2}},
+\textbf{Junaid Bhatti\textsuperscript{2}}
+\\
+\textbf{Utkarsh Soni\textsuperscript{2}},
+\textbf{Yifan Nie\textsuperscript{2}},
+\textbf{Eugene Wen\textsuperscript{2}},
+\textbf{Yuntian Deng\textsuperscript{1}}
+\\
+\textsuperscript{1}University of Waterloo
+\qquad
+\textsuperscript{2}Manulife
+\\
+\texttt{\{w564zhang,yuntian\}@uwaterloo.ca}
+}
+
+
+\begin{document}
+\maketitle
+
+\input{sections/abstract}
+
+\input{sections/introduction}
+
+\input{sections/multi_agent}
+
+\input{sections/control_data}
+
+\input{sections/program_model}
+
+%\input{sections/library}
+
+
+
+\input{sections/experiments}
+
+\input{sections/analyses}
+
+\input{sections/conclusion}
+
+\bibliography{custom}
+
+\input{sections/appendix}
+
+\input{sections/naive_failures}
+\input{sections/related_work}
+\end{document}

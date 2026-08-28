@@ -1,0 +1,605 @@
+{
+  "fixed": {
+    "mean_recall": 0.4072,
+    "mean_precision": 0.456,
+    "mean_jaccard": 0.3103,
+    "mean_n_comments": 6.0,
+    "mean_stability": 1.0,
+    "per_seed": [
+      {
+        "recall": 0.4241083333333333,
+        "precision": 0.46527083333333336,
+        "jaccard": 0.320625,
+        "n_comments": 6.0,
+        "stability": 1.0,
+        "best_iter": 0,
+        "iterations": [
+          {
+            "k": 0,
+            "recall": 0.55,
+            "precision": 0.63334,
+            "jaccard": 0.43382,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.43382
+          },
+          {
+            "k": 0,
+            "recall": 0.4241083333333333,
+            "precision": 0.46527083333333336,
+            "jaccard": 0.320625,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.320625
+          }
+        ]
+      },
+      {
+        "recall": 0.3526791666666667,
+        "precision": 0.40972083333333337,
+        "jaccard": 0.26990000000000003,
+        "n_comments": 6.0,
+        "stability": 1.0,
+        "best_iter": 0,
+        "iterations": [
+          {
+            "k": 0,
+            "recall": 0.225,
+            "precision": 0.23333999999999996,
+            "jaccard": 0.13984000000000002,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.13984000000000002
+          },
+          {
+            "k": 0,
+            "recall": 0.3526791666666667,
+            "precision": 0.40972083333333337,
+            "jaccard": 0.26990000000000003,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.26990000000000003
+          }
+        ]
+      },
+      {
+        "recall": 0.4449416666666666,
+        "precision": 0.4930541666666666,
+        "jaccard": 0.34042083333333334,
+        "n_comments": 6.0,
+        "stability": 1.0,
+        "best_iter": 0,
+        "iterations": [
+          {
+            "k": 0,
+            "recall": 0.275,
+            "precision": 0.23331999999999997,
+            "jaccard": 0.16277999999999998,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.16277999999999998
+          },
+          {
+            "k": 0,
+            "recall": 0.4449416666666666,
+            "precision": 0.4930541666666666,
+            "jaccard": 0.34042083333333334,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.34042083333333334
+          }
+        ]
+      }
+    ]
+  },
+  "naive": {
+    "mean_recall": 0.0,
+    "mean_precision": 0.0,
+    "mean_jaccard": 0.0,
+    "mean_n_comments": 0.0,
+    "mean_stability": 0.0,
+    "per_seed": [
+      {
+        "recall": 0.0,
+        "precision": 0.0,
+        "jaccard": 0.0,
+        "n_comments": 0.0,
+        "stability": 0.0,
+        "best_iter": 0,
+        "iterations": [
+          {
+            "k": 0,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 1,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 2,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 3,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 0,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 1,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 2,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 3,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          }
+        ]
+      },
+      {
+        "recall": 0.0,
+        "precision": 0.0,
+        "jaccard": 0.0,
+        "n_comments": 0.0,
+        "stability": 0.0,
+        "best_iter": 0,
+        "iterations": [
+          {
+            "k": 0,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 1,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 2,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 3,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 0,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 1,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 2,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 3,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          }
+        ]
+      },
+      {
+        "recall": 0.0,
+        "precision": 0.0,
+        "jaccard": 0.0,
+        "n_comments": 0.0,
+        "stability": 0.0,
+        "best_iter": 0,
+        "iterations": [
+          {
+            "k": 0,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 1,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 2,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 3,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 0,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 1,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 2,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          },
+          {
+            "k": 3,
+            "recall": 0.0,
+            "precision": 0.0,
+            "jaccard": 0.0,
+            "n_comments": 0.0,
+            "stability": 0.0,
+            "val_jaccard": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "ours": {
+    "mean_recall": 0.4601,
+    "mean_precision": 0.5069,
+    "mean_jaccard": 0.353,
+    "mean_n_comments": 6.0,
+    "mean_stability": 1.0,
+    "per_seed": [
+      {
+        "recall": 0.5644833333333333,
+        "precision": 0.5416666666666667,
+        "jaccard": 0.4072666666666666,
+        "n_comments": 6.0,
+        "stability": 1.0,
+        "best_iter": 3,
+        "iterations": [
+          {
+            "k": 0,
+            "recall": 0.55,
+            "precision": 0.63334,
+            "jaccard": 0.43382,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.08623333333333333
+          },
+          {
+            "k": 1,
+            "recall": 0.425,
+            "precision": 0.53334,
+            "jaccard": 0.32998000000000005,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.2074
+          },
+          {
+            "k": 2,
+            "recall": 0.45,
+            "precision": 0.53332,
+            "jaccard": 0.35394,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.2117
+          },
+          {
+            "k": 3,
+            "recall": 0.65,
+            "precision": 0.7,
+            "jaccard": 0.53736,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.13306666666666667
+          },
+          {
+            "k": 0,
+            "recall": 0.4241083333333333,
+            "precision": 0.46527083333333336,
+            "jaccard": 0.320625,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.39008333333333334
+          },
+          {
+            "k": 1,
+            "recall": 0.4650291666666666,
+            "precision": 0.5027791666666667,
+            "jaccard": 0.3497916666666667,
+            "n_comments": 5.958333333333333,
+            "stability": 1.0,
+            "val_jaccard": 0.3230166666666667
+          },
+          {
+            "k": 2,
+            "recall": 0.4920583333333333,
+            "precision": 0.5416708333333334,
+            "jaccard": 0.36915416666666667,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.31303333333333333
+          },
+          {
+            "k": 3,
+            "recall": 0.5644833333333333,
+            "precision": 0.5416666666666667,
+            "jaccard": 0.4072666666666666,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.4963666666666667
+          }
+        ]
+      },
+      {
+        "recall": 0.3526791666666667,
+        "precision": 0.40972083333333337,
+        "jaccard": 0.26990000000000003,
+        "n_comments": 6.0,
+        "stability": 1.0,
+        "best_iter": 0,
+        "iterations": [
+          {
+            "k": 0,
+            "recall": 0.225,
+            "precision": 0.23333999999999996,
+            "jaccard": 0.13984000000000002,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.29633333333333334
+          },
+          {
+            "k": 1,
+            "recall": 0.475,
+            "precision": 0.7000200000000001,
+            "jaccard": 0.42047999999999996,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.763
+          },
+          {
+            "k": 2,
+            "recall": 0.6,
+            "precision": 0.7,
+            "jaccard": 0.49572000000000005,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.512
+          },
+          {
+            "k": 3,
+            "recall": 0.7,
+            "precision": 0.76666,
+            "jaccard": 0.58862,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.7202999999999999
+          },
+          {
+            "k": 0,
+            "recall": 0.3526791666666667,
+            "precision": 0.40972083333333337,
+            "jaccard": 0.26990000000000003,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.4579333333333333
+          },
+          {
+            "k": 1,
+            "recall": 0.4474708333333333,
+            "precision": 0.5138916666666665,
+            "jaccard": 0.3529125,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.3232833333333333
+          },
+          {
+            "k": 2,
+            "recall": 0.43531666666666674,
+            "precision": 0.6388833333333334,
+            "jaccard": 0.3898333333333333,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.2617
+          },
+          {
+            "k": 3,
+            "recall": 0.39067500000000005,
+            "precision": 0.5069458333333333,
+            "jaccard": 0.30876250000000005,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.24609999999999999
+          }
+        ]
+      },
+      {
+        "recall": 0.4630458333333333,
+        "precision": 0.5694416666666667,
+        "jaccard": 0.3819250000000001,
+        "n_comments": 6.0,
+        "stability": 1.0,
+        "best_iter": 2,
+        "iterations": [
+          {
+            "k": 0,
+            "recall": 0.275,
+            "precision": 0.23331999999999997,
+            "jaccard": 0.16277999999999998,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.20706666666666665
+          },
+          {
+            "k": 1,
+            "recall": 0.54166,
+            "precision": 0.63334,
+            "jaccard": 0.44114,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.36200000000000004
+          },
+          {
+            "k": 2,
+            "recall": 0.55,
+            "precision": 0.53332,
+            "jaccard": 0.40859999999999996,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.4294
+          },
+          {
+            "k": 3,
+            "recall": 0.55,
+            "precision": 0.6,
+            "jaccard": 0.46456,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.4935333333333333
+          },
+          {
+            "k": 0,
+            "recall": 0.4449416666666666,
+            "precision": 0.4930541666666666,
+            "jaccard": 0.34042083333333334,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.27038333333333336
+          },
+          {
+            "k": 1,
+            "recall": 0.4097208333333333,
+            "precision": 0.4791666666666666,
+            "jaccard": 0.30857916666666674,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.3119
+          },
+          {
+            "k": 2,
+            "recall": 0.4630458333333333,
+            "precision": 0.5694416666666667,
+            "jaccard": 0.3819250000000001,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.3291
+          },
+          {
+            "k": 3,
+            "recall": 0.5148791666666667,
+            "precision": 0.5972125,
+            "jaccard": 0.4268541666666667,
+            "n_comments": 6.0,
+            "stability": 1.0,
+            "val_jaccard": 0.27585
+          }
+        ]
+      }
+    ]
+  }
+}

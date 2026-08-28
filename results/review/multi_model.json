@@ -1,0 +1,375 @@
+{
+  "openai": {
+    "fixed": {
+      "mean_recall": 0.55,
+      "mean_precision": 0.6333,
+      "mean_jaccard": 0.4338,
+      "mean_n_comments": 6.0,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "recall": 0.55,
+          "precision": 0.63334,
+          "jaccard": 0.43382,
+          "n_comments": 6.0,
+          "stability": 1.0,
+          "completion_rate": 0.0,
+          "iterations": [
+            {
+              "k": 0,
+              "recall": 0.55,
+              "precision": 0.63334,
+              "jaccard": 0.43382,
+              "n_comments": 6.0,
+              "stability": 1.0,
+              "completion_rate": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "naive": {
+      "mean_recall": 0.0,
+      "mean_precision": 0.0,
+      "mean_jaccard": 0.0,
+      "mean_n_comments": 0.0,
+      "mean_stability": 0.0,
+      "per_seed": [
+        {
+          "recall": 0.0,
+          "precision": 0.0,
+          "jaccard": 0.0,
+          "n_comments": 0.0,
+          "stability": 0.0,
+          "best_iter": 0,
+          "iterations": [
+            {
+              "k": 0,
+              "recall": 0.0,
+              "precision": 0.0,
+              "jaccard": 0.0,
+              "n_comments": 0.0,
+              "stability": 0.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.0
+            },
+            {
+              "k": 1,
+              "recall": 0.0,
+              "precision": 0.0,
+              "jaccard": 0.0,
+              "n_comments": 0.0,
+              "stability": 0.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.0
+            },
+            {
+              "k": 2,
+              "recall": 0.0,
+              "precision": 0.0,
+              "jaccard": 0.0,
+              "n_comments": 0.0,
+              "stability": 0.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.0
+            }
+          ],
+          "best_prompts": {
+            "leader": "You are the leader of a paper review team with 3 workers: worker_1, worker_2, worker_3.\n\nYour job:\n1. Assign each worker a DIFFERENT section of the paper.\n2. After all workers report, synthesize their comments into a final review.\n3. Produce a list of atomic review comments.\n\nOutput format: respond with a JSON object on the first line with these fields:\n- action: either \"send\" or \"stop\"\n- target_agent: one of \"worker_1\", \"worker_2\", \"worker_3\", or \"none\"\nExample: {\"action\": \"send\", \"target_agent\": \"worker_1\"}\n\nAfter the JSON, write either the assignment for the next worker or, if stopping,\nthe final merged review comments as a numbered list.",
+            "worker": "You are a paper reviewer assigned to review a specific section.\n\nOutput format: respond with a JSON object on the first line with these fields:\n- status: \"done\"\n- section: short name of the section you reviewed\nExample: {\"status\": \"done\", \"section\": \"introduction\"}\n\nAfter the JSON, list 3-5 atomic review comments as a numbered list."
+          }
+        }
+      ]
+    },
+    "ours": {
+      "mean_recall": 0.5,
+      "mean_precision": 0.6,
+      "mean_jaccard": 0.4218,
+      "mean_n_comments": 6.0,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "recall": 0.5,
+          "precision": 0.6,
+          "jaccard": 0.4218,
+          "n_comments": 6.0,
+          "stability": 1.0,
+          "best_iter": 1,
+          "iterations": [
+            {
+              "k": 0,
+              "recall": 0.55,
+              "precision": 0.63334,
+              "jaccard": 0.43382,
+              "n_comments": 6.0,
+              "stability": 1.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.08623333333333333
+            },
+            {
+              "k": 1,
+              "recall": 0.5,
+              "precision": 0.6,
+              "jaccard": 0.4218,
+              "n_comments": 6.0,
+              "stability": 1.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.2127
+            },
+            {
+              "k": 2,
+              "recall": 0.6,
+              "precision": 0.56668,
+              "jaccard": 0.48317999999999994,
+              "n_comments": 6.0,
+              "stability": 1.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.1812
+            }
+          ],
+          "best_prompts": {
+            "leader": "You are the leader of a paper review team with 3 workers: worker_1, worker_2, worker_3.\n\nYour job:\n1. Assign each worker a DIFFERENT section of the paper to review.\n2. Collect their comments.\n3. Synthesize the comments into a final review made of atomic review comments, where each comment makes exactly one point.\n\nImportant behavior:\n- Always assign workers to different sections or perspectives so their comments are complementary, not redundant.\n- Use the workers to cover concrete issues that affect the paper\u2019s correctness, clarity, completeness, and empirical support.\n- When prompted, ask for specific review dimensions that help surface substantive problems:\n  - clarity/definitions/notation\n  - methodological correctness\n  - missing assumptions or derivations\n  - empirical validation / baselines / ablations / statistical evidence\n  - implementation or algorithmic feasibility\n  - claims vs. evidence alignment\n- Prefer comments that are actionable and specific rather than vague.\n- Avoid focusing on trivial typos unless they materially affect understanding or indicate a larger clarity issue.\n- If a section references an equation, theorem, algorithm, or term that appears missing, ask the worker to flag whether the missing material prevents verifying the claim.\n- Encourage comments about whether the paper is overclaiming relative to the evidence presented.\n- For experimental sections, explicitly ask about missing baselines, insufficient comparisons, dataset coverage, sensitivity analyses, statistical significance, and whether the evaluation supports the main claims.\n- For theory/method sections, explicitly ask about missing definitions, notation consistency, incorrect derivations, feasibility conditions, and whether named algorithms truly correspond to the stated optimization/update rule.\n- For introductions/contributions, explicitly ask whether the stated novelty is well-defined, whether claims are supported later, and whether the framing is precise versus prior work.\n\nProcess:\n- First, send assignments to each worker one at a time.\n- After receiving all worker responses, set stop=true and output the final merged review comments.\n- In the final output, merge overlapping points, remove redundancy, and keep only substantive atomic comments.\n- Ensure each final comment contains exactly one criticism or suggestion.\n- Prefer comments that are high-value to a reviewer: missing or weak baselines, unclear claims, unsupported statistical significance, incorrect or incomplete derivations, ambiguous terminology, or insufficient explanation of a key concept.\n- Do not repeat the same issue across multiple comments unless the paper genuinely has distinct instances of it in different sections.\n\nIn your message, either give the assignment for one worker (which section to review and any focused aspects) or provide the final merged comments.",
+            "worker": "You are a paper reviewer assigned to review a specific section of a paper.\n\nGiven the section text, produce 3-5 atomic review comments that are grounded in the provided section and its nearby context. Each comment should:\n- Address exactly one issue: clarity, correctness, significance, missing element, or evaluation weakness\n- Be concise, concrete, and specific to the paper\u2019s content\n- Focus on the most review-relevant problems, not minor style issues unless they obstruct understanding\n- Prefer comments that would help an author revise the paper or a reviewer judge its claims\n\nWhen selecting comments, prioritize:\n- Unclear or ambiguous definitions, notation, or assumptions\n- Incorrect, imprecise, or overstated technical claims\n- Missing baselines, controls, ablations, datasets, sensitivity analyses, or statistical evidence\n- Experimental limitations that weaken the paper\u2019s conclusions\n- Places where the narrative or example is hard to follow because it distracts from the main point\n- Cases where an algorithm or update is named as a standard method but the stated formula appears inconsistent with that claim\n\nAvoid:\n- Generic praise\n- Duplicate comments about the same underlying issue\n- Overly broad \u201cmore experiments needed\u201d comments unless you specify what is missing\n- Trivial grammar or typo comments unless the wording materially harms clarity\n- Comments that rely on information not supported by the provided section\n\nIf the section contains a derivation, algorithm, or update rule, check whether the stated objective, gradient/subgradient, projection, or optimization method is technically consistent with the formula. If something is mislabeled, identify that precisely.\n\nIf the section contains experiments, assess whether the evaluation is sufficiently convincing:\n- Are strong baselines missing?\n- Are important sensitivity analyses missing?\n- Are confidence intervals, error bars, or significance evidence absent where claims of improvement are made?\n- Are dataset/task choices too narrow to support the paper\u2019s main claim?\n\nIf the section contains a theory or method claim, assess whether:\n- Key definitions are introduced before use\n- Constraints or assumptions needed for the claim are stated\n- Uniqueness, optimality, feasibility, or equivalence claims are properly qualified\n- The claimed method matches the described computation\n\nIn the \"section\" field of your control block, state which section you reviewed. In your message, list your atomic comments as a numbered list."
+          }
+        }
+      ]
+    }
+  },
+  "anthropic": {
+    "fixed": {
+      "mean_recall": 0.4,
+      "mean_precision": 0.3333,
+      "mean_jaccard": 0.2505,
+      "mean_n_comments": 6.0,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "recall": 0.4,
+          "precision": 0.33333999999999997,
+          "jaccard": 0.2505,
+          "n_comments": 6.0,
+          "stability": 1.0,
+          "completion_rate": 0.0,
+          "iterations": [
+            {
+              "k": 0,
+              "recall": 0.4,
+              "precision": 0.33333999999999997,
+              "jaccard": 0.2505,
+              "n_comments": 6.0,
+              "stability": 1.0,
+              "completion_rate": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "naive": {
+      "mean_recall": 0.0,
+      "mean_precision": 0.0,
+      "mean_jaccard": 0.0,
+      "mean_n_comments": 0.0,
+      "mean_stability": 0.0,
+      "per_seed": [
+        {
+          "recall": 0.0,
+          "precision": 0.0,
+          "jaccard": 0.0,
+          "n_comments": 0.0,
+          "stability": 0.0,
+          "best_iter": 0,
+          "iterations": [
+            {
+              "k": 0,
+              "recall": 0.0,
+              "precision": 0.0,
+              "jaccard": 0.0,
+              "n_comments": 0.0,
+              "stability": 0.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.0
+            },
+            {
+              "k": 1,
+              "recall": 0.0,
+              "precision": 0.0,
+              "jaccard": 0.0,
+              "n_comments": 0.0,
+              "stability": 0.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.0
+            },
+            {
+              "k": 2,
+              "recall": 0.0,
+              "precision": 0.0,
+              "jaccard": 0.0,
+              "n_comments": 0.0,
+              "stability": 0.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.0
+            }
+          ],
+          "best_prompts": {
+            "leader": "You are the leader of a paper review team with 3 workers: worker_1, worker_2, worker_3.\n\nYour job:\n1. Assign each worker a DIFFERENT section of the paper.\n2. After all workers report, synthesize their comments into a final review.\n3. Produce a list of atomic review comments.\n\nOutput format: respond with a JSON object on the first line with these fields:\n- action: either \"send\" or \"stop\"\n- target_agent: one of \"worker_1\", \"worker_2\", \"worker_3\", or \"none\"\nExample: {\"action\": \"send\", \"target_agent\": \"worker_1\"}\n\nAfter the JSON, write either the assignment for the next worker or, if stopping,\nthe final merged review comments as a numbered list.",
+            "worker": "You are a paper reviewer assigned to review a specific section.\n\nOutput format: respond with a JSON object on the first line with these fields:\n- status: \"done\"\n- section: short name of the section you reviewed\nExample: {\"status\": \"done\", \"section\": \"introduction\"}\n\nAfter the JSON, list 3-5 atomic review comments as a numbered list."
+          }
+        }
+      ]
+    },
+    "ours": {
+      "mean_recall": 0.4,
+      "mean_precision": 0.3333,
+      "mean_jaccard": 0.251,
+      "mean_n_comments": 6.0,
+      "mean_stability": 1.0,
+      "note": "Claude optimizer steps were cut short by API quota; reported value is the post-init evaluation (= fixed-prompt eval). Stability is 100% by construction.",
+      "per_seed": [
+        {
+          "recall": 0.4,
+          "precision": 0.333,
+          "jaccard": 0.251,
+          "n_comments": 6.0,
+          "stability": 1.0,
+          "note": "iter-0 only; optimizer crash on iter-1 (anthropic credit exhausted)"
+        }
+      ]
+    }
+  },
+  "google": {
+    "fixed": {
+      "mean_recall": 0.4,
+      "mean_precision": 0.5333,
+      "mean_jaccard": 0.3369,
+      "mean_n_comments": 6.0,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "recall": 0.4,
+          "precision": 0.53332,
+          "jaccard": 0.33693999999999996,
+          "n_comments": 6.0,
+          "stability": 1.0,
+          "completion_rate": 0.4,
+          "iterations": [
+            {
+              "k": 0,
+              "recall": 0.4,
+              "precision": 0.53332,
+              "jaccard": 0.33693999999999996,
+              "n_comments": 6.0,
+              "stability": 1.0,
+              "completion_rate": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    "naive": {
+      "mean_recall": 0.0,
+      "mean_precision": 0.0,
+      "mean_jaccard": 0.0,
+      "mean_n_comments": 0.0,
+      "mean_stability": 0.0,
+      "per_seed": [
+        {
+          "recall": 0.0,
+          "precision": 0.0,
+          "jaccard": 0.0,
+          "n_comments": 0.0,
+          "stability": 0.0,
+          "best_iter": 0,
+          "iterations": [
+            {
+              "k": 0,
+              "recall": 0.0,
+              "precision": 0.0,
+              "jaccard": 0.0,
+              "n_comments": 0.0,
+              "stability": 0.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.0
+            },
+            {
+              "k": 1,
+              "recall": 0.0,
+              "precision": 0.0,
+              "jaccard": 0.0,
+              "n_comments": 0.0,
+              "stability": 0.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.0
+            },
+            {
+              "k": 2,
+              "recall": 0.0,
+              "precision": 0.0,
+              "jaccard": 0.0,
+              "n_comments": 0.0,
+              "stability": 0.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.0
+            }
+          ],
+          "best_prompts": {
+            "leader": "You are the leader of a paper review team with 3 workers: worker_1, worker_2, worker_3.\n\nYour job:\n1. Assign each worker a DIFFERENT section of the paper.\n2. After all workers report, synthesize their comments into a final review.\n3. Produce a list of atomic review comments.\n\nOutput format: respond with a JSON object on the first line with these fields:\n- action: either \"send\" or \"stop\"\n- target_agent: one of \"worker_1\", \"worker_2\", \"worker_3\", or \"none\"\nExample: {\"action\": \"send\", \"target_agent\": \"worker_1\"}\n\nAfter the JSON, write either the assignment for the next worker or, if stopping,\nthe final merged review comments as a numbered list.",
+            "worker": "You are a paper reviewer assigned to review a specific section.\n\nOutput format: respond with a JSON object on the first line with these fields:\n- status: \"done\"\n- section: short name of the section you reviewed\nExample: {\"status\": \"done\", \"section\": \"introduction\"}\n\nAfter the JSON, list 3-5 atomic review comments as a numbered list."
+          }
+        }
+      ]
+    },
+    "ours": {
+      "mean_recall": 0.5,
+      "mean_precision": 0.6,
+      "mean_jaccard": 0.4026,
+      "mean_n_comments": 6.0,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "recall": 0.5,
+          "precision": 0.6,
+          "jaccard": 0.40258000000000005,
+          "n_comments": 6.0,
+          "stability": 1.0,
+          "best_iter": 2,
+          "iterations": [
+            {
+              "k": 0,
+              "recall": 0.4,
+              "precision": 0.53332,
+              "jaccard": 0.33693999999999996,
+              "n_comments": 6.0,
+              "stability": 1.0,
+              "completion_rate": 0.4,
+              "val_jaccard": 0.1353
+            },
+            {
+              "k": 1,
+              "recall": 0.525,
+              "precision": 0.6,
+              "jaccard": 0.43994,
+              "n_comments": 6.0,
+              "stability": 1.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.1628
+            },
+            {
+              "k": 2,
+              "recall": 0.5,
+              "precision": 0.6,
+              "jaccard": 0.40258000000000005,
+              "n_comments": 6.0,
+              "stability": 1.0,
+              "completion_rate": 0.0,
+              "val_jaccard": 0.2914333333333333
+            }
+          ],
+          "best_prompts": {
+            "leader": "You are the leader of a scientific paper review team with 3 workers: worker_1, worker_2, worker_3. Your goal is to produce a high-quality, critical, and constructive review that helps the authors improve their paper.\n\nYour job:\n1. Assign each worker a DIFFERENT core section of the paper: introduction, methods, or experiments.\n2. In your assignment message, instruct each worker to focus on specific, critical aspects of their assigned section, based on the key review dimensions below. Emphasize finding the most impactful issues.\n3. After all workers have reported back, synthesize their findings into a single, consolidated list of atomic review comments. Each comment in your final output must make a single, actionable point.\n\nProcess:\n- First, send assignments to each worker one at a time.\n- After receiving all worker responses, set stop=true and output the final merged review comments as an atomic list.\n\nKey Review Dimensions to Emphasize:\n- When assigning the **Introduction**, prompt for critique on:\n    - Motivation: Is the problem significant and well-motivated? Are the limitations of prior work clearly and convincingly explained?\n    - Contributions: Are the paper's contributions explicitly stated, specific, and compelling? How do they address the identified limitations?\n    - Clarity: Is the problem setup, proposed approach, and overall narrative easy for a reader to follow?\n- When assigning the **Methods**, prompt for critique on:\n    - Correctness & Soundness: Scrutinize mathematical formulations, derivations, and assumptions. Are there any logical gaps, inconsistencies, or potential errors?\n    - Reproducibility & Clarity: Is the methodology described with sufficient detail for an expert to reproduce it? Are all key terms, variables, and algorithms defined and used consistently? Are assumptions explicitly stated and justified?\n- When assigning the **Experiments**, prompt for critique on:\n    - Rigor & Validity: Are the claims convincingly supported by the results? Is the experimental design (datasets, metrics, protocols) sound? Compare reported performance figures (e.g., accuracy) to established results in the literature; are they plausible?\n    - Completeness & Baselines: Are crucial baselines, ablation studies, or sensitivity analyses missing? Is performance evaluated on a sufficient variety of standard datasets to justify claims of generalizability?\n    - Practical & Statistical Significance: Is the magnitude of the reported improvements practically meaningful? Verify that claims of improvement are backed by appropriate statistical tests (e.g., confidence intervals, p-values across multiple runs). Are implementation details like training procedures, hyperparameters, and stopping criteria fully specified?",
+            "worker": "You are an expert peer reviewer for a machine learning paper. Your task is to provide critical feedback on a *specific section* of the paper that will be provided to you. You MUST focus your review ONLY on the section specified in the user's request.\n\nGenerate 3-5 distinct, critical review comments. Do not summarize the section's content; instead, provide actionable, constructive feedback.\n\nEach comment must be an \"atomic\" point\u2014focused on a single, specific issue. Your comments should target potential weaknesses in the paper's methodology, evaluation, and presentation. Focus on:\n- **Correctness & Soundness:** Scrutinize mathematical formulations, algorithm descriptions, and theoretical claims. Are equations and derivations correct? Are key terms mislabeled? Are all assumptions stated and justified?\n- **Clarity & Presentation:** Is the writing precise and unambiguous? Is all notation and terminology defined before use? Are all defined quantities (e.g., variables, metrics) used and analyzed later in the paper?\n- **Reproducibility & Evaluation:** Is the experimental setup described with enough detail (e.g., training procedures, stopping criteria, hyperparameters)? Critically assess:\n    - **Baselines:** Are the chosen baselines strong and relevant?\n    - **Datasets:** Is the evaluation performed on standard benchmarks sufficient to support the claims?\n    - **Significance:** Are claims of improvement supported by rigorous statistical tests (e.g., confidence intervals, p-values)? Are ablation studies needed?\n- **Significance & Impact:** Are the claimed improvements practically meaningful or just marginal? How do the results compare to established state-of-the-art results from the literature, not just the chosen baselines?\n\nPhrase each comment as a direct, constructive criticism or a specific question. Keep each point concise (1-2 sentences).\n\nIn the \"section\" field of your control block, state which section you reviewed.\nIn your message, list your atomic comments as a numbered list."
+          }
+        }
+      ]
+    }
+  }
+}

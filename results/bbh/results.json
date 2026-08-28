@@ -1,0 +1,1078 @@
+{
+  "logical_deduction_three_objects": {
+    "fixed": {
+      "mean_accuracy": 0.72,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.72,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.72,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.76,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.76,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.68,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.68,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "naive": {
+      "mean_accuracy": 0.7067,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.68,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.72,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.56,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.72,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.64,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.68,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.68,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.8,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.8,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.76,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.76,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.8,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.76,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.8,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.64,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.68,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.64,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.6,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.64,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.68,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.64,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "ours": {
+      "mean_accuracy": 0.6933,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.6,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.72,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.72,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.76,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.76,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.76,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.6,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.8,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.84,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.72,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.72,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.8,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.76,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.8,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.68,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.72,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.6,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.64,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.72,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.56,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.68,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "tracking_shuffled_objects_three_objects": {
+    "fixed": {
+      "mean_accuracy": 0.2667,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.28,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.28,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.28,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.28,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.24,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.24,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "naive": {
+      "mean_accuracy": 0.2133,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.24,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.24,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.28,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.16,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.2,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.28,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.24,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.24,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.24,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.2,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.2,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.28,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.24,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.24,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.16,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.2,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.2,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.24,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.28,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.32,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.16,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "ours": {
+      "mean_accuracy": 0.2933,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.28,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.2,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.08,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.2,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.2,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.28,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.28,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.24,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.24,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.36,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.28,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.28,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.24,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.24,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.36,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.2,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.24,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.36,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.28,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.32,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.36,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "causal_judgement": {
+    "fixed": {
+      "mean_accuracy": 0.6,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.44,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.44,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.72,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.72,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.64,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.64,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "naive": {
+      "mean_accuracy": 0.4667,
+      "mean_stability": 0.6667,
+      "per_seed": [
+        {
+          "accuracy": 0.0,
+          "stability": 0.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.44,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.52,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.0,
+              "stability": 0.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.0,
+              "stability": 0.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.0,
+              "stability": 0.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.0,
+              "stability": 0.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.76,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.76,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.76,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.68,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.68,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.64,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.76,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.64,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.64,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.6,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.64,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.56,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.72,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.64,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "ours": {
+      "mean_accuracy": 0.52,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.36,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.4,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.32,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.4,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.36,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.36,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.36,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.48,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.72,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.48,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.56,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.48,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.48,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.48,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.72,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.64,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.72,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.64,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.64,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.68,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.72,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "word_sorting": {
+    "fixed": {
+      "mean_accuracy": 0.48,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.52,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.52,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.48,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.48,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.44,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.44,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "naive": {
+      "mean_accuracy": 0.4133,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.36,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.36,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.48,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.4,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.4,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.36,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.36,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.48,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.52,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.56,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.48,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.6,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.52,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.48,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.4,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.4,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.4,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.44,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.36,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.48,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.4,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "ours": {
+      "mean_accuracy": 0.4133,
+      "mean_stability": 1.0,
+      "per_seed": [
+        {
+          "accuracy": 0.32,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.4,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.36,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.36,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.36,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.4,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.32,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.52,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.52,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.52,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.48,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.56,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.48,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.52,
+              "stability": 1.0
+            }
+          ]
+        },
+        {
+          "accuracy": 0.4,
+          "stability": 1.0,
+          "iterations": [
+            {
+              "k": 0,
+              "accuracy": 0.44,
+              "stability": 1.0
+            },
+            {
+              "k": 1,
+              "accuracy": 0.4,
+              "stability": 1.0
+            },
+            {
+              "k": 2,
+              "accuracy": 0.44,
+              "stability": 1.0
+            },
+            {
+              "k": 3,
+              "accuracy": 0.4,
+              "stability": 1.0
+            },
+            {
+              "k": 4,
+              "accuracy": 0.48,
+              "stability": 1.0
+            },
+            {
+              "k": 5,
+              "accuracy": 0.4,
+              "stability": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
